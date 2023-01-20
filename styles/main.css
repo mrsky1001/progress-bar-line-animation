@@ -16,19 +16,26 @@
 
 body {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
+    flex-direction: column;
     background-color: var(--dark);
     height: 100vh;
 }
+
+h2{
+    font-size: 50px;
+    padding: 200px;
+    color: var(--light);
+    text-shadow: 1px 1px white, -1px -1px #444;
+}
+
 
 .loader {
     position: relative;
     width: 40%;
     height: 4px;
     background: var(--dark-bg);
-
-
 }
 
 .loader::before {
